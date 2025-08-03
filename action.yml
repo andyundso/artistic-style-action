@@ -43,10 +43,6 @@ runs:
         make --silent
         sudo mv "${{ env.ASTYLE_BUILD_PATH }}/astyle/build/gcc/bin/astyle" /usr/bin
         astyle --version
-    - name: "Install yq"
-      shell: "bash"
-      run: |
-        sudo snap install yq
     - name: "Check formatting"
       shell: "bash"
       run: |
